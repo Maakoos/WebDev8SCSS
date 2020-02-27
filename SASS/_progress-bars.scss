@@ -1,0 +1,64 @@
+.bars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &__item {
+        flex-basis: 30%;
+        margin-bottom: 20px;
+        text-align: center;
+
+        @include mq(tablet) {
+            flex-basis: 25%;
+        }
+
+    }
+
+    &__circle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+        width: 200px;
+        height: 200px;
+        border: 3px solid;
+        border-radius: 50%;
+
+        &--first {
+            border-color: #f34739;
+            color: #f34739;
+        }
+
+        &--second {
+            border-color: #009989;
+            color: #009989;
+        }
+
+        &--third {
+            border-color: #152b3c;
+            color: #152b3c;
+        }
+
+        @include mq(tablet-large) {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    &__counter {
+        font-size: 50px;
+    }
+
+    &__counter-name {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: #000;
+    }
+
+    &__description {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}

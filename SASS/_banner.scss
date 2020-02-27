@@ -1,0 +1,91 @@
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url('img/team-small.jpg');
+    background-size: cover;
+    margin-bottom: 20px;
+    height: 210px;
+    color: #fff;
+
+    &--portfolio {
+        margin-bottom: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)),
+            url('img/projects-bg.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    &--brands {
+        background: linear-gradient(rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)),
+            url('img/brands-bg.jpg');
+        background-position: center;
+    }
+
+    @include mq(desktop-small) {
+        height: 300px;
+    }
+
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        max-width: 1000px;
+        height: $banner-height * 0.9;
+        text-align: center;
+        border: 2px solid #fff;
+
+    }
+
+    &__small-title {
+        position: relative;
+        font-size: 18px;
+        font-weight: 300;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            width: 25%;
+            border: 0.5px solid #fff;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            width: 25%;
+            border: 0.5px solid #fff;
+        }
+
+        &--small-line {
+
+            &::before {
+                left: 10px;
+                width: 10%;
+            }
+
+            &::after {
+                right: 10px;
+                width: 10%;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 40px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 600;
+    }
+}

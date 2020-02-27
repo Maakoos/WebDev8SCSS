@@ -1,0 +1,47 @@
+.portfolio {
+
+    &__projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__link {
+        display: none;
+        flex-basis: 48%;
+        overflow: hidden;
+
+        @include mq(smartphone) {
+            flex-basis: 32%;
+
+            &:nth-child(-n+6) {
+                display: block;
+            }
+        }
+
+        @include mq(tablet-large) {
+            flex-basis: 14%;
+
+            &:nth-child(n+7) {
+                display: block;
+            }
+        }
+
+        &:nth-child(-n+4) {
+            display: block;
+        }
+    }
+
+    &__item {
+        transition: .3s;
+
+        @include mq(desktop-small) {
+            filter: grayscale(1);
+
+            &:hover {
+                filter: grayscale(0);
+                transform: scale(1.4) rotate(20deg);
+            }
+        }
+    }
+}

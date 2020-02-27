@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Dev Challange 8</title>
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Darker+Grotesque:400|Quicksand:300,400,600,700&display=swap&subset=latin-ext"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="style.min.css">
+</head>
+
+<body>
+
+
+
+  <nav class="nav">
+
+    <span class="nav__logo">Dsgn</span>
+    <div class="icons">
+      <a href="#" class="icons__ico icons__ico--fb">
+        <span class="fa fa-facebook-f"></span>
+      </a>
+      <a href="#" class="icons__ico icons__ico--insta">
+        <span class="fa fa-instagram"></span>
+      </a>
+      <a href="#" class="icons__ico icons__ico--twitter">
+        <span class="fa fa-twitter"></span>
+      </a>
+      <a href="#" class="icons__ico icons__ico--linkedin">
+        <span class="fa fa-linkedin"></span>
+      </a>
+    </div>
+
+    <div class="nav__btn-menu">
+      <span class="fa fa-bars nav__bars nav__bars--show"></span>
+      <span class="fa fa-times nav__close"></span>
+      <span class="nav__text-menu">Menu</span>
+    </div>
+
+    <ul class="nav__menu">
+      <li class="nav__item">
+        <a href="#" class="nav__link" data-link="home">Home</a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link" data-link="team">Our Team</a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link" data-link="portfolio">Portfolio</a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link" data-link="brands">Brands</a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link" data-link="contact">Contact</a>
+      </li>
+    </ul>
+
+  </nav>
+
+  <header class="header" data-section="home">
+
+    <div class="container">
+      <span class="header__help">Need our help?</span>
+      <h1 class="header__main-title">Top Desingers</h1>
+      <button class="header__btn">Check us!</button>
+      <span class="fa fa-angle-double-down header__arrows"></span>
+    </div>
+  </header>
+
+  <!-- Progres bar -->
+  <div class="container">
+    <section class="bars">
+      <div class="bars__item">
+        <div class="bars__circle bars__circle--first">
+          <span class="bars__counter">50</span>
+          <span class="bars__counter-name">Big Projects</span>
+        </div>
+        <p class="bars__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, possimus.</p>
+      </div>
+
+      <div class="bars__item">
+        <div class="bars__circle bars__circle--second">
+          <span class="bars__counter">35</span>
+          <span class="bars__counter-name">Clients</span>
+        </div>
+        <p class="bars__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, possimus.</p>
+      </div>
+
+      <div class="bars__item">
+        <div class="bars__circle bars__circle--third">
+          <span class="bars__counter">80</span>
+          <span class="bars__counter-name">Months</span>
+        </div>
+        <p class="bars__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, possimus.</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Team -->
+  <section class="team" data-section="team">
+
+    <div class="banner">
+      <div class="banner__box">
+        <div class="container">
+          <p class="banner__small-title">Meet us!</p>
+          <h2 class="banner__title">Our Team</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <article class="team__single-box">
+        <div class="team__person">
+          <p class="team__name-person">Adrianna</p>
+          <span class="team__profession-person">Senior Graphic Desinger</span>
+          <p class="team__experience-person">She is the graphic desinger with 3 years of professional experience.</p>
+        </div>
+        <div class="team__photo team__photo--first">
+        </div>
+      </article>
+
+      <article class="team__single-box">
+        <div class="team__person team__person--modify">
+          <p class="team__name-person">Olivia</p>
+          <span class="team__profession-person">Art Director</span>
+          <p class="team__experience-person">She is the art director with 8 years of professional experience.</p>
+        </div>
+        <div class="team__photo team__photo--second">
+        </div>
+      </article>
+
+      <article class="team__single-box">
+        <div class="team__person">
+          <p class="team__name-person">Thomas</p>
+          <span class="team__profession-person">Software Engeneer</span>
+          <p class="team__experience-person">He is the software engeneer with 5 years of professional experience.</p>
+        </div>
+        <div class="team__photo team__photo--third">
+        </div>
+      </article>
+
+      <article class="team__single-box">
+        <div class="team__person team__person--modify">
+          <p class="team__name-person">Taylor</p>
+          <span class="team__profession-person">CEO</span>
+          <p class="team__experience-person">She is the boss in here.</p>
+        </div>
+        <div class="team__photo team__photo--fourth">
+        </div>
+      </article>
+
+
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio" data-section="portfolio">
+
+    <div class="banner banner--portfolio">
+      <div class="banner__box">
+        <div class="container">
+          <p class="banner__small-title banner__small-title--small-line">Check our projects!</p>
+          <h2 class="banner__title">Portfolio</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio__projects">
+
+      <a href="#" class="portfolio__link">
+        <img src="img/project1.jpg" alt="project-1" class="portfolio__item">
+      </a>
+      <a href="#" class="portfolio__link">
+        <img src="img/project2.jpg" alt="project-1" class="portfolio__item">
+      </a>
+      <a href="#" class="portfolio__link">
+        <img src="img/project3.jpg" alt="project-1" class="portfolio__item">
+      </a>
+      <a href="#" class="portfolio__link">
+        <img src="img/project4.jpg" alt="project-1" class="portfolio__item">
+      </a>
+      <a href="#" class="portfolio__link">
+        <img src="img/project9.jpg" alt="project-1" class="portfolio__item">
+      </a>
+      <a href="#" class="portfolio__link">
+        <img src="img/project6.jpg" alt="project-1" class="portfolio__item">
+      </a>
+      <a href="#" class="portfolio__link">
+        <img src="img/project7.jpg" alt="project-1" class="portfolio__item">
+      </a>
+      <a href="#" class="portfolio__link">
+        <img src="img/project5.jpg" alt="project-1" class="portfolio__item">
+      </a>
+      <a href="#" class="portfolio__link">
+        <img src="img/project8.jpg" alt="project-1" class="portfolio__item">
+      </a>
+      <a href="#" class="portfolio__link">
+        <img src="img/project10.jpg" alt="project-1" class="portfolio__item">
+      </a>
+      <a href="#" class="portfolio__link">
+        <img src="img/project11.jpg" alt="project-1" class="portfolio__item">
+      </a>
+      <a href="#" class="portfolio__link">
+        <img src="img/project5.jpg" alt="project-1" class="portfolio__item">
+      </a>
+      <a href="#" class="portfolio__link">
+        <img src="img/project10.jpg" alt="project-1" class="portfolio__item">
+      </a>
+      <a href="#" class="portfolio__link">
+        <img src="img/project11.jpg" alt="project-1" class="portfolio__item">
+      </a>
+    </div>
+  </section>
+
+  <!-- Brands -->
+  <section class="brands" data-section="brands">
+    <div class="banner banner--brands">
+      <div class="banner__box">
+        <div class="container">
+          <p class="banner__small-title banner__small-title--small-line">We work for</p>
+          <h2 class="banner__title">Brands</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="brands__logos">
+        <div class="brands__item">
+          <img src="img/logo/allegro.png" alt="allegro">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/wordpress.png" alt="wordpress">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/AMD.png" alt="amd">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/vw.png" alt="volkswagen">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/Android.png" alt="android">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/ups.png" alt="ups">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/apple.png" alt="apple">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/ubuntu.png" alt="ubuntu">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/AVG.png" alt="avg">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/teamspeak.png" alt="teamspeak">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/bosh.png" alt="bosh">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/Shell.png" alt="shell">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/Cooler_master.png" alt="cooler master">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/playstation.png" alt="playstation">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/Dell.png" alt="dell">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/Nivea.png" alt="nivea">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/EA.png" alt="ea">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/NIKE.png" alt="nike">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/HF2.png" alt="half life">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/mitsubishi.png" alt="mitsubishi">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/HP.png" alt="hp">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/microsoft.png" alt="microsoft">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/HTML5.png" alt="html5">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/mbank.png" alt="mbank">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/Insta.png" alt="instagram">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/LG.png" alt="lg">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/Intel.png" alt="intel">
+        </div>
+        <div class="brands__item">
+          <img src="img/logo/KFC.png" alt="kfc">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Contact -->
+  <div class="contact-bg" data-section="contact">
+    <section class="container container--contact">
+
+      <div class="contact">
+
+        <div class="contact__box">
+          <h3 class="contact__heading">Our Team</h3>
+          <p class="contact__description">We are the best company in the entire world!</p>
+        </div>
+        <div class="contact__box">
+          <h3 class="contact__heading">About</h3>
+          <p class="contact__description">We are the best company in the entire world!</p>
+        </div>
+        <div class="contact__box">
+          <h3 class="contact__heading">Contact</h3>
+          <address class="contact__description contact__description--address">
+            example@email.com <br>
+            www.example.com <br>
+            tel. +48 123 456 79
+          </address>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="arrow-up">
+    <span class="fa fa-chevron-circle-up"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

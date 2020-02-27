@@ -1,0 +1,61 @@
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #101010;
+    color: #efefef;
+    text-align: center;
+
+    @include mq(smartphone-large) {
+        justify-content: space-around;
+    }
+
+    &__box {
+        flex-basis: 70%;
+        margin-bottom: 40px;
+
+        &:nth-last-child(1) {
+            margin-bottom: 0;
+        }
+
+        @include mq(smartphone-large) {
+            flex-basis: 30%;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 20px;
+        font-family: 'Darker Grotesque', sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        &::after {
+            content: "";
+            display: block;
+            margin-top: 5px;
+            width: 50%;
+            transform: translateX(50%);
+            border-bottom: 1px solid #019081;
+        }
+
+        @include mq(tablet) {
+            font-size: 35px;
+        }
+    }
+
+    &__description {
+        font-size: 15px;
+        font-style: normal;
+        color: darken(#efefef, 35);
+
+        @include mq(tablet) {
+            font-size: 18px;
+        }
+    }
+}
+
+.contact-bg {
+    background-color: #101010;
+}

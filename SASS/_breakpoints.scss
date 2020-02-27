@@ -1,0 +1,8 @@
+$breakpoints: (smartphone: (min-width: 460px),
+    smartphone-landscape: ((max-height: 420px) and (max-width: 500px) and (orientation: landscape)),
+    smartphone-large: (min-width: 641px),
+    tablet: (min-width: 768px),
+    tablet-large: (min-width: 1024px),
+    desktop-small: (min-width: 1280px),
+    desktop-medium: (min-width: 1600px),
+    desktop-large: (min-width: 1900px), );

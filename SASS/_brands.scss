@@ -1,0 +1,71 @@
+.brands {
+
+	&__logos {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 15px;
+		row-gap: 40px;
+
+		@include mq(smartphone) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+		@include mq(smartphone-large) {
+			grid-template-columns: repeat(5, 1fr);
+		}
+
+		@include mq(tablet-large) {
+			grid-template-columns: repeat(6, 1fr);
+		}
+
+		@include mq(desktop-small) {
+			grid-template-columns: repeat(7, 1fr);
+		}
+	}
+
+	&__item {
+		display: none;
+		justify-content: center;
+		align-items: center;
+		opacity: 0.5;
+		transition: .5s;
+
+		& img {
+			width: 50%;
+		}
+
+		&:nth-child(-n+9) {
+			display: flex;
+		}
+
+		@include mq(smartphone) {
+			&:nth-child(-n+12) {
+				display: flex;
+			}
+		}
+
+		@include mq(smartphone-large) {
+			&:nth-child(-n+15) {
+				display: flex;
+			}
+		}
+
+		@include mq(tablet-large) {
+			&:nth-child(-n+18) {
+				display: flex;
+			}
+		}
+
+		@include mq(desktop-small) {
+			&:nth-child(n+1) {
+				display: flex;
+				opacity: 0.3;
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+
+	}
+}
